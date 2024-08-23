@@ -17,6 +17,16 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                   background-size: cover; 
                   background-position: center;
                   background-repeat: no-repeat;}
+             body::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 175%;
+                    background-color: rgba(255, 255, 255, 0.6); /* Superposición blanca con 50% de transparencia */
+                    z-index: -1; /* Asegura que esté detrás del contenido */
+                }
         </style>
     </head>
     <body>
@@ -39,12 +49,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
             <h1 class="negrita" style="color: darkmagenta;">TALLERES</h1>
         </header>
 
-        <h2>Taller de ARTETERAPIA</h2>
-        <img src="../imagenes/talleres/taller_2.jpg" alt="Pintura" width="230" height="200">
-        <img src="../imagenes/talleres/taller_4.jpg" alt="Pintura" width="230" height="200">
-        <h2>Taller de PUNTILLISMO</h2>
-        <img src="../imagenes/talleres/taller_1.jpg" alt="Puntillismo" width="230" height="200">
-        <img src="../imagenes/talleres/taller_3.jpg" alt="Puntillismo" width="230" height="200">
+        <h2 style="color: Hexadecimal: #E2725B;">Taller de ARTETERAPIA</h2>
+        <img src="../imagenes/talleres/taller_2.jpg" alt="Pintura" width="230" height="200" style="border-radius: 30%;">
+        <img src="../imagenes/talleres/taller_4.jpg" alt="Pintura" width="230" height="200" style="border-radius: 30%;">
+        <h2 style="color: Hexadecimal: #E2725B;">Taller de PUNTILLISMO</h2>
+        <img src="../imagenes/talleres/taller_1.jpg" alt="Puntillismo" width="230" height="200" style="border-radius: 30%;">
+        <img src="../imagenes/talleres/taller_3.jpg" alt="Puntillismo" width="230" height="200" style="border-radius: 30%;">
         
         </div>
         
