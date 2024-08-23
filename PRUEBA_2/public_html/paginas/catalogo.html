@@ -17,6 +17,16 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                   background-size: cover; 
                   background-position: center;
                   background-repeat: no-repeat;}
+           body::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 300%;
+                    background-color: rgba(255, 255, 255, 0.7); /* Superposición blanca con 70% de transparencia */
+                    z-index: -1; /* Asegura que esté detrás del contenido */
+                }
         </style>
     </head>
     <body>
@@ -39,19 +49,20 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
             <h1 class="negrita" style="color: darkmagenta;">CATALOGO</h1>
         </header>
 
-        <h3 class="negrita">PRODUCTOS A PEDIDO CON TU TALLA Y COLORES FAVORITOS 🌻</h3><br>
-        <h4 class="negrita">ZAPATILLAS</h4><br>
-        <img src="../imagenes/catalogo/zapatillas/zap_1.jpeg" alt="Zapatilla_1" width="230" height="200">
-        <img src="../imagenes/catalogo/zapatillas/zap_2.jpeg" alt="Zapatilla_2" width="230" height="200">
-        <h4 class="negrita">PRENDAS DE VESTIR</h4><br>
-        <img src="../imagenes/catalogo/prendas/prenda_1.jpg" alt="Prenda_1" width="230" height="200">
-        <img src="../imagenes/catalogo/prendas/prenda_2.jpg" alt="Prenda_2" width="230" height="200">
-        <h4 class="negrita">ACCESORIOS</h4><br>
-        <img src="../imagenes/catalogo/accesorios/accesorio_1.jpg" alt="Accesorio_1" width="230" height="200">
-        <img src="../imagenes/catalogo/accesorios/accesorio_2.jpg" alt="Accesorio_2" width="230" height="200">
-        <h4 class="negrita">CHAQUETAS Y ABRIGOS</h4>
-        <img src="../imagenes/catalogo/chaquetas/chaqueta_1.jpg" alt="Chaqueta_1" width="230" height="200">
-        <img src="../imagenes/catalogo/chaquetas/chaqueta_2.jpg" alt="Chaqueta_2" width="230" height="200">
+        <h3 class="negrita cuadro-texto"><i class="fas fa-paint-brush"></i>PRODUCTOS A PEDIDO CON TU TALLA Y COLORES FAVORITOS 🌻</h3><br>
+        <h4 class="negrita" style="color: #8B5C42;">ZAPATILLAS</h4><br>
+        <img src="../imagenes/catalogo/zapatillas/zap_1.jpeg" alt="Zapatilla_1" width="230" height="200" style="border-radius: 30%;">
+        <img src="../imagenes/catalogo/zapatillas/zap_2.jpeg" alt="Zapatilla_2" width="230" height="200" style="border-radius: 30%;">
+        <h4 class="negrita" style="color: #8B5C42;">PRENDAS DE VESTIR</h4>
+        <br>
+        <img src="../imagenes/catalogo/prendas/prenda_1.jpg" alt="Prenda_1" width="230" height="200" style="border-radius: 30%;">
+        <img src="../imagenes/catalogo/prendas/prenda_2.jpg" alt="Prenda_2" width="230" height="200" style="border-radius: 30%;">
+        <h4 class="negrita" style="color:#8B5C42;">ACCESORIOS</h4><br>
+        <img src="../imagenes/catalogo/accesorios/accesorio_1.jpg" alt="Accesorio_1" width="230" height="200" style="border-radius: 30%;">
+        <img src="../imagenes/catalogo/accesorios/accesorio_2.jpg" alt="Accesorio_2" width="230" height="200" style="border-radius: 30%;">
+        <h4 class="negrita" style="color: #8B5C42;">CHAQUETAS Y ABRIGOS</h4>
+        <img src="../imagenes/catalogo/chaquetas/chaqueta_1.jpg" alt="Chaqueta_1" width="230" height="200" style="border-radius: 30%;">
+        <img src="../imagenes/catalogo/chaquetas/chaqueta_2.jpg" alt="Chaqueta_2" width="230" height="200" style="border-radius: 30%;">
         
         </div>
     </body>
