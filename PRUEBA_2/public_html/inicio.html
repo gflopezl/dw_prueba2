@@ -13,6 +13,16 @@
                   background-position: center;
                   background-repeat: no-repeat;
                   }
+            body::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 222%;
+                    background-color: rgba(255, 255, 255, 0.7); /* Superposición blanca con 70% de transparencia */
+                    z-index: -1; /* Asegura que esté detrás del contenido */
+                }
         </style>
     </head>
     <body>
@@ -67,15 +77,17 @@
         </div>
         
         
-        <h2>Imágenes</h2>
+        <div style="text-align: center;">
+        <h2 class="cuadro-texto">Imágenes</h2>
         <img src="imagenes/zapatilla_mariposa.jpeg"
         alt="zapatilla_mariposa"
-        width="300" height="200">
+        width="300" height="200"
+        style="border-radius: 30%;">
         <img src="imagenes/zapatilla_heroina.jpeg"
         alt="zapatilla_heroina"
-        width="300" height="200">
-        
-
+        width="300" height="200"
+        style="border-radius: 30%;">
+        </div>
         
         <footer class="texto-centrado">
             <p class="negrita">&copy; 2024 Pinto Tus Pasos. Todos los derechos reservados.</p>
