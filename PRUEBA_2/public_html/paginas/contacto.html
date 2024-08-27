@@ -17,6 +17,16 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                   background-size: cover; 
                   background-position: center;
                   background-repeat: no-repeat;}
+            body::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 150%;
+                    background-color: rgba(255, 255, 255, 0.7); /* Superposición blanca con 70% de transparencia */
+                    z-index: -1; /* Asegura que esté detrás del contenido */
+                }
         </style>
     </head>
     <body>
@@ -43,7 +53,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         
         <!-- Podemos dar características a los íconos asignadoles una clase -->
         <a href="https://www.facebook.com/pintotuspasos?locale=es_LA"
-           class="facebook">
+           class="facebook"style="color: blue;>
            <i class="fab fa-facebook"></i>
         </a><br>
         
@@ -51,7 +61,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         <a
         href="https://www.instagram.com/pinto_tus_pasos?igsh=cG1xNnJraTRlMTJ6"
         target="_blank" 
-        style="color: white; font-size: 40px;">
+        style="color: blue; font-size: 40px;">
             <i class="fab fa-instagram"></i>
         </a><br>
         
