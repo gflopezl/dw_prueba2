@@ -13,24 +13,41 @@
                   background-position: center;
                   background-repeat: no-repeat;
                   }
+            body::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 222%;
+                    background-color: rgba(255, 255, 255, 0.7); /* Superposición blanca con 70% de transparencia */
+                    z-index: -1; /* Asegura que esté detrás del contenido */
+                }          
         </style>
     </head>
     <body>
 
         <img src="imagenes/logo3.png"
              alt="Logo"
-             width="330" height="300">
+             width="330" 
+             height="300"
+             style="border: none; box-shadow: none;">
         
         <img src="imagenes/gato2.png"
         alt="gato"
         width="700" height="300"
-        class="gato2">
+        class="gato2"
+        style="border: none; box-shadow: none;">
       
         <div class="barra-navegacion">
             <a href="paginas/catalogo.html" class="enlace-navegacion">Catálogo</a><br>
             <a href="paginas/servicios.html" class="enlace-navegacion">Servicios</a><br>
             <a href="paginas/talleres.html" class="enlace-navegacion">Talleres</a><br>
             <a href="paginas/contacto.html" class="enlace-navegacion">Contacto</a>
+            <form>
+            <input type="text" placeholder="Buscar..." name="search">
+            <button type="submit">🔍</button>
+            </form>
         </div><br>
         
         <div class="cuadro-texto">
@@ -66,20 +83,19 @@
         la calidad y el respeto por el medio ambiente.</p>
         </div>
         
-        
-        <h2>Imágenes</h2>
+        <div class="texto-centrado">
+        <h2  style="color: darkmagenta">IMAGENES</h2>
         <img src="imagenes/zapatilla_mariposa.jpeg"
         alt="zapatilla_mariposa"
         width="300" height="200">
         <img src="imagenes/zapatilla_heroina.jpeg"
         alt="zapatilla_heroina"
         width="300" height="200">
-        
+        </div><br><br>
 
+        <div class="pie-pagina">
+            <p>&copy; 2024 Pinto Tus Pasos. Todos los derechos reservados.</p>
+        </div>
         
-        <footer class="texto-centrado">
-            <p class="negrita">&copy; 2024 Pinto Tus Pasos. Todos los derechos reservados.</p>
-        </footer> 
     </body>
 </html>
-
